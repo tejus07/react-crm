@@ -67,3 +67,12 @@
     @apply bg-background text-foreground;
   }
 }
+
+.search-container input{
+  background-color: #2a2b30;
+  color: #dadbdd;
+}
+.search-container input::placeholder{
+  color: #dadbdd;
+  opacity: 1
+}
