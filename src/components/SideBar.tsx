@@ -2,7 +2,7 @@ import {Badge} from "@/components/ui/badge";
 
 export function SideBar() {
     return (
-        <div className="relative w-20 flex flex-col items-center space-y-4 py-4 custom-background bordery">
+        <div className="relative w-20 flex flex-col items-center space-y-4 custom-background bordery">
             <div className="relative flex w-full justify-center items-center cursor-pointer py-4">
                 <Badge className="absolute rotate-90 left-0 pill"></Badge>
                 <svg className="text-primary"
