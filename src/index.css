@@ -85,8 +85,53 @@
     background: #1f2029;
 }
 
+.custom-background-dashboard {
+    background: #141416;
+}
+
 .custom-background-nav-icons {
     background: #45464b;
+}
+
+.total-orders-bg {
+    background: #273367;
+}
+
+.total-delivered-bg {
+    background: #165246;
+}
+
+.total-delivered-bg svg {
+    height: 25px;
+    top: 15%;
+    left: 20%;
+    position: absolute;
+}
+
+.total-cancelled-bg {
+    background: #5f3237;
+}
+
+.total-cancelled-bg svg {
+    height: 25px;
+    top: 15%;
+    left: 20%;
+    position: absolute;
+}
+
+.total-revenue-bg {
+    background: #582949;
+}
+
+.total-revenue-bg svg {
+    height: 25px;
+    top: 15%;
+    left: 20%;
+    position: absolute;
+}
+
+.green-text {
+    color: #00cc8e;
 }
 
 .bordery::before {

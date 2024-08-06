@@ -12,7 +12,7 @@ function App() {
         <NavBar/>
           <div className="flex h-screen">
               <SideBar/>
-              <div className="w-full">
+              <div className="w-full custom-background-dashboard">
                   <DashBoard/>
               </div>
           </div>
