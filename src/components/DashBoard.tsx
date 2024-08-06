@@ -9,8 +9,8 @@ export function DashBoard() {
                 </div>
             </div>
             <div className="row flex flex-row px-6">
-                <div className="col w-7/12 flex flex-row">
-                    <div className="custom-background flex flex-col p-4 m-2 w-1/4 rounded">
+                <div className="col w-8/12 flex flex-row">
+                    <div className="custom-background flex flex-col p-3 m-2 w-1/4 rounded">
                         <div className="h-10 w-10 total-orders-bg rounded-lg relative">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                  version="1.1" x="0px" y="0px" viewBox="0 0 256 256" enableBackground="new 0 0 256 256"
@@ -25,7 +25,7 @@ export function DashBoard() {
                                 </g>
                             </svg>
                         </div>
-                        <div className="text-xs mt-2 opacity-75	">Total Orders</div>
+                        <div className="text-xs mt-2 opacity-75	font-bold">Total Orders</div>
                         <div className="flex justify-between items-baseline">
                             <div className="text-2xl font-bold">75</div>
                             <div className="text-xs font-bold flex flex-row items-center green-text opacity-85">
@@ -47,7 +47,7 @@ export function DashBoard() {
                             </div>
                         </div>
                     </div>
-                    <div className="custom-background flex flex-col p-4 m-2 w-1/4 rounded">
+                    <div className="custom-background flex flex-col p-3 m-2 w-1/4 rounded">
                         <div className="h-10 w-10 total-delivered-bg rounded-lg relative">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                  version="1.1" x="0px" y="0px" viewBox="0 0 256 256" enableBackground="new 0 0 256 256"
@@ -62,7 +62,7 @@ export function DashBoard() {
                                 <script/>
                             </svg>
                         </div>
-                        <div className="text-xs mt-2 opacity-75	"> Total Delivered</div>
+                        <div className="text-xs mt-2 opacity-75	font-bold"> Total Delivered</div>
                         <div className="flex justify-between items-baseline">
                             <div className="text-2xl font-bold">70</div>
                             <div className="text-xs font-bold flex flex-row items-center red-text opacity-85">
@@ -85,7 +85,7 @@ export function DashBoard() {
                             </div>
                         </div>
                     </div>
-                    <div className="custom-background flex flex-col p-4 m-2 w-1/4 rounded">
+                    <div className="custom-background flex flex-col p-3 m-2 w-1/4 rounded">
 
                         <div className="h-10 w-10 total-cancelled-bg rounded-lg relative">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -104,7 +104,7 @@ export function DashBoard() {
                             </svg>
                         </div>
 
-                        <div className="text-xs mt-2 opacity-75	"> Total Cancelled</div>
+                        <div className="text-xs mt-2 opacity-75	font-bold"> Total Cancelled</div>
                         <div className="flex justify-between items-baseline">
                             <div className="text-2xl font-bold">05</div>
                             <div className="text-xs font-bold flex flex-row items-center green-text opacity-85">
@@ -127,7 +127,7 @@ export function DashBoard() {
                             </div>
                         </div>
                     </div>
-                    <div className="custom-background flex flex-col p-4 m-2 w-1/4 rounded">
+                    <div className="custom-background flex flex-col p-3 m-2 w-1/4 rounded">
                         <div className="h-10 w-10 total-revenue-bg rounded-lg relative">
                             <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                  version="1.1" x="0px" y="0px" viewBox="0 0 256 256"
@@ -145,7 +145,7 @@ export function DashBoard() {
                                 <script/>
                             </svg>
                         </div>
-                        <div className="text-xs mt-2 opacity-75	">Total Revenue</div>
+                        <div className="text-xs mt-2 opacity-75	font-bold">Total Revenue</div>
                         <div className="flex justify-between items-baseline">
                             <div className="text-2xl font-bold">$12k</div>
                             <div className="text-xs font-bold flex flex-row items-center red-text opacity-85">
@@ -168,19 +168,33 @@ export function DashBoard() {
                         </div>
                     </div>
                 </div>
-                <div className="col w-5/12 ml-2">
-                    <div className="custom-background flex flex-row p-4 m-2 rounded">
-                        <div className="flex flex-col w-7/12">
-                            <div className="text-xs mt-2 opacity-75	">Net Profit</div>
-                            <div>
-                                Total Orders
+                <div className="col w-4/12 ml-2">
+                    <div className="custom-background flex flex-row p-3 m-2 rounded">
+                        <div className="flex flex-col w-7/12 justify-between">
+                            <div className="text-xs opacity-75	font-bold">Net Profit</div>
+                            <div className="text-4xl font-bold">
+                                $ 6759.25
                             </div>
-                            <div className="justify-between">
-                                <span className="text-2xl font-bold">75</span>
-                                <span className="text-2xl font-bold accent-green-400">3%</span>
+                            <div className="text-xs font-bold flex flex-row items-center green-text opacity-85">
+                                <div className="h-3 w-3 mr-1.5 green-text">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                                         version="1.1" x="0px" y="0px" viewBox="0 0 256 256"
+                                         enableBackground="new 0 0 256 256" xmlSpace="preserve">
+                                        <script/>
+                                        <metadata> Svg Vector Icons : http://www.onlinewebfonts.com/icon</metadata>
+                                        <g>
+                                            <g>
+                                                <path fill="#00cc8e"
+                                                      d="M246,179.6c0,4-1.4,7.5-4.4,10.4c-2.9,2.9-6.4,4.4-10.4,4.4H24.8c-4,0-7.5-1.4-10.4-4.4c-2.9-2.9-4.4-6.4-4.4-10.4c0-4,1.5-7.5,4.4-10.4L117.6,66c2.9-2.9,6.4-4.4,10.4-4.4c4,0,7.5,1.4,10.4,4.4l103.3,103.3C244.6,172.1,246,175.6,246,179.6z"/>
+                                            </g>
+                                        </g>
+                                        <script/>
+                                    </svg>
+                                </div>
+                                3%
                             </div>
                         </div>
-                        <div className="flex flex-col w-5/12">
+                        <div className="flex flex-col w-5/12 relative">
                             <CircularProgressBar percentage={70}/>
                             <div className="progress-note flex justify-center opacity-85"><sup>*</sup>The values here has been rounded off.</div>
                         </div>

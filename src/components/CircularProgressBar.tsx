@@ -14,12 +14,12 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ percentage })
         <div className="flex items-center justify-center">
             <svg
                 className="rotate-[-90deg]"
-                width="120"
-                height="120"
+                width="85"
+                height="85"
                 viewBox="0 0 120 120"
             >
                 <circle
-                    className="text-gray-300"
+                    className="text-primary-foreground"
                     strokeWidth={strokeWidth}
                     stroke="currentColor"
                     fill="transparent"
@@ -28,7 +28,7 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ percentage })
                     cy="60"
                 />
                 <circle
-                    className="text-blue-500"
+                    className="text-primary"
                     strokeWidth={strokeWidth}
                     strokeDasharray={circumference}
                     strokeDashoffset={offset}
@@ -40,7 +40,8 @@ const CircularProgressBar: React.FC<CircularProgressBarProps> = ({ percentage })
                     cy="60"
                 />
             </svg>
-            <div className="absolute text-xl font-bold text-blue-500">{percentage}%</div>
+            <div className="absolute text-base font-bold top-6">{percentage}%</div>
+            <div className="progress-title absolute text-center">Goal <br></br>Completed</div>
         </div>
     );
 };

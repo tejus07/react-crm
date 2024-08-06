@@ -162,6 +162,12 @@
     line-height: 0.65rem;
 }
 
+.progress-title {
+    font-size: 0.4rem;
+    line-height: 0.50rem;
+    top: 3.1rem;
+}
+
 .progress-note sup {
     top: 0.25rem;
 }
