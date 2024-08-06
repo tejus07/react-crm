@@ -125,13 +125,17 @@
 
 .total-revenue-bg svg {
     height: 25px;
-    top: 15%;
+    top: 20%;
     left: 20%;
     position: absolute;
 }
 
 .green-text {
     color: #00cc8e;
+}
+
+.red-text {
+    color: #e35553;
 }
 
 .bordery::before {
@@ -151,4 +155,13 @@
 .pill {
     left: -17%;
     width: 35px;
+}
+
+.progress-note {
+    font-size: 0.5rem;
+    line-height: 0.65rem;
+}
+
+.progress-note sup {
+    top: 0.25rem;
 }

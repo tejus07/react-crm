@@ -1,8 +1,11 @@
+import CircularProgressBar from "@/components/CircularProgressBar.tsx";
+
+
 export function DashBoard() {
     return (
         <>
             <div className="row flex-row p-6">
-                <div className="text-2xl font-bold">Dashboard
+                <div className="text-2xl font-bold ml-2">Dashboard
                 </div>
             </div>
             <div className="row flex flex-row px-6">
@@ -62,8 +65,8 @@ export function DashBoard() {
                         <div className="text-xs mt-2 opacity-75	"> Total Delivered</div>
                         <div className="flex justify-between items-baseline">
                             <div className="text-2xl font-bold">70</div>
-                            <div className="text-xs font-bold flex flex-row items-center green-text opacity-85">
-                                <div className="h-3 w-3 mr-1.5 green-text">
+                            <div className="text-xs font-bold flex flex-row items-center red-text opacity-85">
+                                <div className="h-3 w-3 mr-1.5">
                                     <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                          version="1.1" x="0px" y="0px" viewBox="0 0 256 256"
                                          enableBackground="new 0 0 256 256" xmlSpace="preserve">
@@ -145,10 +148,9 @@ export function DashBoard() {
                         <div className="text-xs mt-2 opacity-75	">Total Revenue</div>
                         <div className="flex justify-between items-baseline">
                             <div className="text-2xl font-bold">$12k</div>
-                            <div className="text-xs font-bold flex flex-row items-center green-text opacity-85">
-                                <div className="h-3 w-3 mr-1.5 green-text">
-                                    <svg height="2px" width="2px"
-                                        xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
+                            <div className="text-xs font-bold flex flex-row items-center red-text opacity-85">
+                                <div className="h-3 w-3 mr-1.5">
+                                    <svg xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"
                                          version="1.1" x="0px" y="0px" viewBox="0 0 256 256"
                                          enableBackground="new 0 0 256 256" xmlSpace="preserve">
                                         <script/>
@@ -168,10 +170,8 @@ export function DashBoard() {
                 </div>
                 <div className="col w-5/12 ml-2">
                     <div className="custom-background flex flex-row p-4 m-2 rounded">
-                        <div className="flex flex-col w-60">
-                            <div>
-                                Net Profit
-                            </div>
+                        <div className="flex flex-col w-7/12">
+                            <div className="text-xs mt-2 opacity-75	">Net Profit</div>
                             <div>
                                 Total Orders
                             </div>
@@ -180,17 +180,9 @@ export function DashBoard() {
                                 <span className="text-2xl font-bold accent-green-400">3%</span>
                             </div>
                         </div>
-                        <div className="flex flex-col w-40">
-                            <div>
-                                Net Profit
-                            </div>
-                            <div>
-                                Total Orders
-                            </div>
-                            <div className="justify-between">
-                                <span className="text-2xl font-bold">75</span>
-                                <span className="text-2xl font-bold accent-green-400">3%</span>
-                            </div>
+                        <div className="flex flex-col w-5/12">
+                            <CircularProgressBar percentage={70}/>
+                            <div className="progress-note flex justify-center opacity-85"><sup>*</sup>The values here has been rounded off.</div>
                         </div>
                     </div>
                 </div>
